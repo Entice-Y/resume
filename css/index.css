@@ -1,0 +1,493 @@
+body{
+	/*height: 3000px;*/
+	background-image: url(../image/1.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;/*固定在网页中*/
+	background-size: 100% ;
+	background-position: 0-100px;
+}
+
+header nav{
+	width: 100%;
+	height: 50px;
+	background: rgba(0,0,0,0.75);
+	position: fixed;
+	z-index: 9;
+}
+
+header nav .title{
+	width: 1200px;
+	height: 50px;
+	/*background:red;*/
+	margin: 0 auto;
+}
+header nav .title .logo{
+	width: 200px;
+	height:50px;
+	/*background: blue;*/
+	float: left;
+	color: white;
+	font-size: 25px;
+	font-weight: bold;
+	line-height: 48px;
+	font-family: "Arial"
+}
+header nav .title .nav{
+	width: 385px;
+	height:50px;
+	/*background: green;*/
+	float: right;
+}
+header nav .title ul li{
+	width: 77px;
+	height: 50px;
+	/*background: #4eb2d6;*/
+	float:left;
+	color: #ffffff;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 48px;
+	transition:background 1s;
+	font-family: "Arial"
+}
+header nav .title ul li:hover{
+	background: #4eb2d6;
+}
+header .content{
+	width: 100%;
+	height:700PX;
+	background: rgba(0,0,0,0.5); 
+    border-top: 1px solid black;/*自我介绍 破坏*/
+}
+header .content p{
+	width: 1000px;
+	/*background: red;*/
+	margin: 220px auto 0;/*字到顶部间距*/
+	color: white;
+	font-weight: bold;
+	font-size: 50px;
+	line-height: 1.5em;/*em倍数，行高75, =50*1.5*/
+	text-align: center;/*水平居中对齐*/
+}
+header .content .btn{
+	width: 245px;
+	height:56px;
+	border:1px solid white;
+	margin: 50px auto 0;/*外间距 左右auto*/
+	color: white;
+	font-size: 30px;
+	text-align: center;
+	line-height: 56px;
+	border-radius: 15px;/*倒圆角 0 12 45 96四个值*/
+	transition: 1s;
+}
+header .content .btn:hover{
+	background: #4eb2d6;
+}
+header .content .sanjiao{
+	margin:20px auto 0;
+	/*制作三角形的办法*/
+	width: 0px;/*如果宽不是0则为梯形*/
+	height: 0px;
+    border-top: 40px solid white;
+    border-bottom: 0;
+    border-left: 40px solid transparent;/*三角形上底*/
+    border-right: 40px solid transparent;/*三角形上底*/
+    /*动画*/
+    animation: move 1.5s infinite;
+}
+
+@keyframes move{
+	0%{margin-top: 20px;}
+	50%{margin-top: 60px;}
+	100%{margin-top: 20px;}
+}
+/*内容skill部分*/
+.skill-box{
+	width: 100%;
+	background: rgba(60,70,80,0.8);
+	padding-top: 100px;/*在skill上面(父元素）有个wai间距biandayiquan*/
+	padding-bottom: 100px;
+}
+.skill-box h3{
+	width: 648px;
+	border-bottom:2px solid  white;
+	padding-bottom: 30px;
+	height: 40px;
+	margin: 0px auto;/*给子元素nei间距daxiaobubian*/
+	color: #fff;
+	text-align: center;
+	line-height: 40px;
+	font-size: 30px;
+}
+.skill-box p{
+	width: 1100px;
+	font-size: 20px;
+	color: white;
+	margin: 20px auto 0;
+	text-align: center;
+	line-height: 1.6em;
+
+}
+.skill-box ul{
+	width: 1100px;
+	margin: 20px auto 0;
+	overflow: hidden;
+}
+.skill-box ul li{
+	width: 154px;
+	height: 195px;
+	/*background: red;*/
+	float: left;
+	margin-right: 35px;
+	text-align: center;
+}
+.skill-box ul .last{
+	margin-right: 0px;
+}
+.skill-box ul li div{
+	width: 120px;
+	height: 120px;
+	border: 15px solid #2F353D;
+	margin: 0 auto;
+	border-radius: 50%;
+	color: white;
+	font-size: 50px;
+	text-align: center;
+	line-height: 120px;
+}
+
+.skill-box ul li span{
+	font-size: 25px;
+	line-height: 50px;
+	color: white;
+	font-weight: bold;
+
+}
+
+.skill-box ul li div:hover{
+	transition:transform 1s;
+	transform:rotateY(360deg) 
+}
+
+
+
+
+
+
+.skill-box ul li:nth-child(1) div{
+	background: #88A14C;
+}
+.skill-box ul li:nth-child(2) div{
+	background: #84C14C;
+}
+.skill-box ul li:nth-child(3) div{
+	background: #88C64A;
+}
+.skill-box ul li:nth-child(4) div{
+	background: #57A24C;
+}
+.skill-box ul li:nth-child(5) div{
+	background: #24B14C;
+}
+.skill-box ul li:nth-child(6) div{
+	background: #88D16C;
+}
+
+/*my works*/
+.works-box{
+	width: 100%;
+	background: rgba(0,0,0,0.5);
+	padding-top: 100px;/*在skill上面(父元素）有个wai间距biandayiquan*/
+	padding-bottom: 60px;
+}
+.works-box h3{
+	width: 648px;
+	border-bottom:2px solid  white;
+	padding-bottom: 30px;
+	height: 40px;
+	margin: 0px auto;/*给子元素nei间距daxiaobubian*/
+	color: #fff;
+	text-align: center;
+	line-height: 40px;
+	font-size: 30px;
+}
+.works-box p{
+	width: 1100px;
+	font-size: 20px;
+	color: white;
+	margin: 20px auto 0;
+	text-align: center;
+	line-height: 1.6em;
+
+}
+
+.works-box .tab{
+	width: 1070px;
+	height: 465px;
+	/*background:red;*/
+	margin: 10px auto 0;
+} 
+.works-box .tab .anniu-box{
+	width: 335px;
+	height: 40px;
+	/*background: green;*/
+	margin: 0 auto;
+}
+.works-box .tab .anniu-box .anniu{
+	width: 78px;
+	height: 38px;
+	border: 1px solid white;
+	color: white;
+	text-align: center;
+	line-height: 36px;
+	font-size: 20px;
+	border-radius: 4px;
+	float:left;
+	margin-right: 5px;
+	cursor: pointer;
+}
+.works-box .tab .anniu-box .anniu:nth-child(4){
+	margin-right: 0px;
+}
+.works-box .tab .content-box{
+	width: 1070px;
+	height: 400px;
+	/*background: blue;*/
+	margin-top: 25px;
+}
+.works-box .tab .content-box ul{
+	width: 1070px;
+	height: 400px;
+	/*background: yellow;**/
+}
+
+.works-box .tab .content-box ul:nth-child(2){
+	display: none;
+ }
+.works-box .tab .content-box ul:nth-child(3){
+	display: none;
+ }
+.works-box .tab .content-box ul:nth-child(4){
+	display: none;
+ }
+
+.works-box .tab .content-box ul li{
+	width:260px;
+	height: 195px;
+	background: black;
+	float: left;
+	overflow: hidden;
+}
+.works-box .tab .content-box ul li:nth-child(1){
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+.works-box .tab .content-box ul li:nth-child(2){
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+.works-box .tab .content-box ul li:nth-child(3){
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+.works-box .tab .content-box ul li:nth-child(4){
+	margin-bottom: 10px;
+}
+.works-box .tab .content-box ul li:nth-child(5){
+	margin-right: 10px;
+}
+.works-box .tab .content-box ul li:nth-child(6){
+	margin-right: 10px;
+}
+.works-box .tab .content-box ul li:nth-child(7){
+	margin-right: 10px;
+}
+.works-box .tab .content-box ul li:nth-child(8){
+
+}
+
+.works-box .tab .content-box ul li img{
+	transition:transform 1s;
+
+}
+.works-box .tab .content-box ul li img:hover{
+	transform:scale(1.2);/*缩放，括号里写的数值是倍数*/
+}
+
+
+
+/*about*/
+.about-box{
+	width: 100%;
+	background:#2C3138;
+	overflow: hidden;
+}
+.about-box .line{
+	width: 100%;
+	overflow: hidden;
+}
+.about-box .line .content1{
+	width: 45%;
+	float: left;
+	position: relative;
+	font-size: 0;
+}
+.about-box .line .content1 img{
+	width: 100%;
+}
+.about-box .line .content1 .mask{
+	width: 100%;
+	height:100%;
+	background:rgba(0,0,0,0.8);
+	position: absolute;
+	left: 0;top:0;
+}
+.about-box .line .content1 .mask p{
+	width: 70%;
+	margin:120px auto 0;
+	font-size: 50px;
+	font-weight: bold;
+	color: white;
+	text-align: center;
+
+}
+.about-box .line .content2{
+	width: 55%;
+	float: left;
+}
+.about-box .line .content2 .graduation{
+	width: 70%;
+	color: white;
+	margin: 90px auto 0;
+	/*margin-top: 90px;
+	/*margin-left: 45px;*/
+}
+.about-box .line .content2 .graduation h3{
+	font-size: 40px;
+	font-weight: bold;
+	color: white;
+	text-align: center;
+	margin:50px auto 0;
+}
+.about-box .line .content2 .graduation p{
+	font-size: 20px;
+	/*font-weight: bold;*/
+	color: white;
+	text-align: center;
+	margin:30px auto 0;
+}
+
+
+
+.about-box .line1{
+	width: 100%;
+	overflow: hidden;
+}
+.about-box .line1 .content1{
+	width: 45%;
+	float: left;
+}
+.about-box .line1 .content1 .graduation{
+	width: 70%;
+	color: white;
+	margin: 110px auto 0;
+	/*margin-top: 90px;
+	margin-left: 45px;*/
+}
+.about-box .line1 .content1 .graduation h3{
+	font-size: 40px;
+	font-weight: bold;
+	color: white;
+	text-align: center;
+	/*margin:50px auto 0;*/
+}
+.about-box .line1 .content1 .graduation p{
+	font-size: 25px;
+	/*font-weight: bold;*/
+	color: white;
+	text-align: center;
+	margin:40px auto 0;
+}
+
+.about-box .line1 .content2{
+	width: 55%;
+	float: left;
+	position: relative;
+	font-size: 0;
+}
+.about-box .line1 .content2 img{
+	width: 100%;
+}
+.about-box .line1 .content2 .mask{
+	width: 100%;
+	height:100%;
+	background:rgba(0,0,0,0.8);
+	position: absolute;
+	left: 0;top:0;
+}
+.about-box .line1 .content1 .mask p{
+	width: 70%;
+	margin:120px auto 0;
+	font-size: 50px;
+	font-weight: bold;
+	color: white;
+	text-align: center;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+	width: 100%;
+	padding: 30px 0;
+}
+footer h3{
+	width: 630px;
+	height: 100px;
+	/*background: red;*/
+	margin: 0 auto;
+}
+footer h3 span{
+	float: left;
+	width: 210px;
+	border-bottom: 1px solid white
+}
+
+footer h3 .line-through{
+	margin-top: 45px;
+}
+footer h3 .title{
+	margin-top: 18px;
+	font-size: 36px;
+	color: white;
+	text-align: center;
+	border: 0;
+}
+
+
+ .backtop{
+ 	width: 100px;
+ 	height: 100px;
+ 	background: yellow;
+ 	position: fixed;
+ 	right: 20px;
+ 	bottom: 20px;
+ }
+
+
+
+
+
